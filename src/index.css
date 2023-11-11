@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+*, body{
+  font-family: "Raleway", sans-serif;
+  color-scheme: light white;
+  margin: 0;
+  padding: 0;
+  
+  
+}
+
+/* .bgBlue{
+  background-color: rgba(25, 70, 138, 0.116);
+  color: #33333300;
+} */

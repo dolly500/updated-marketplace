@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+    border: 0;
+    margin: 0;
+    background-color: #33333300;
+    color: rgba(25, 70, 138, 0.116);
+    box-sizing: border-box;
+    padding: 0px 100px;
+    box-shadow: 0 5px 10px rgb(25, 70, 138);
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header{
+      max-width: 100%;
+    }
+  }
+  
+  .topHeader, .bottomHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    color: rgb(25, 70, 138);
+    font-size: 50px;
+  }
+  
+  .navbar ul, .authNavbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar li,  .authNavbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar a ,  .authNavbar a{
+    text-decoration: none;
+    color: rgb(25, 70, 138);
+    font-weight: bold;
+    transition: 0s ease-in-out;
+  }
+
+  .authNavbar a{
+    background-color: rgb(25, 70, 138);
+    color: rgb(188, 211, 247);
+    padding: 10px 20px;
+}
+  
+  .navbar a:hover{
+    border-bottom: 3px solid rgb(25, 70, 138);
+    
+  }
+  
+   .authNavbar a:hover {
+    background-color: rgb(188, 211, 247);
+    color: rgb(25, 70, 138);
+  }
+  
+
+  /* search bar */
+  .searchInputContainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f5f5f5;
+    width: 700px;
+  }
+  
+  .searchInput {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex: 1;
+  }
+  
+  .searchButton, .shopBtns .wishlist, .shopBtns .cart{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgb(25, 70, 138);
+    color: rgb(188, 211, 247);
+    
+  }
+
+  .searchButton:hover, .shopBtns .wishlist:hover, .shopBtns .cart:hover{
+    background-color: rgb(188, 211, 247);
+    color: rgb(25, 70, 138);
+    
+  }
+  .shopBtns .wishlist, .shopBtns .cart{
+    padding: 10px;
+  }
+  .shopBtns .wishlist{
+    margin-right: 10px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .searchInputContainer{
+      display: flex;
+      justify-content: center;
+      margin-left: -40px;
+    }
+    .searchInputContainer input{
+      width: 35vw;
+    }
+    .shopBtns{
+      display: flex;
+      margin-left: 10px;
+    }
+  }
+
+
+  /* Add this CSS to your styles or CSS file */
+
+/* Style for the select element */
+select {
+   /* Remove the default dropdown arrow */
+  border: none; /* Remove the border */
+   /* Remove padding to make it fit the text */
+  background-color: transparent; /* Make it transparent */
+  color: rgb(25, 70, 138);
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+/* Style the select dropdown (options) */
+select::-ms-expand {
+  display: none; /* Remove the dropdown arrow for IE/Edge */
+}
+
+
+.custom-bars-icon {
+  color: blue; /* Change this color to your desired color */
+}
+
+@media screen and (max-width:768px){
+  .barname{
+    width: 60vw !important;
+  }
+}

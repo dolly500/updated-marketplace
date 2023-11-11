@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.productCards{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: left;
+    align-items: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    width: 130%;
+
+}
+
+.productCards .productCard{
+    width: 23%;
+    margin: 2%;
+    background-color:rgba(25, 70, 138, 0.226);
+    padding:2%;
+    
+}
+
+/* .productCards .productCard p, .productCards .productCard h3{
+    padding: 2% 5% ;
+    
+} */
+.productCards .productCard p{
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(25, 70, 138);
+}
+.productCards .productCard h3{
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgb(202, 25, 123);
+}
+
+.image{
+    width: 100%;
+}
+
+
+/* Categories.module.css */
+
+
+  
+.productCards .productCard button {
+  background-color: rgb(25, 70, 138);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+
+  
+  .customDropdown {
+    background: rgb(25, 70, 138);
+    border: none;
+    padding: 10px 70px;
+    border-radius: 0; /* No border radius */
+    color: white; /* Text color */
+    outline: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .customDropdown:hover {
+    background: black;
+    color: white; /* Text color */
+   
+  }
+
+  .customDropdown option {
+    background: rgb(188, 211, 247);
+    color: rgb(25, 70, 138);
+    padding: 20px 0;
+    font: optional;
+    
+  }
+  
+  /* Update your existing CSS file or create a new one */
+
+/* Style for the input container */
+.inputContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style for the input field */
+.inputContainer input {
+  width: 20%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Style for the dropdown */
+.inputContainer select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Additional styles for the dropdown options */
+.inputContainer select option {
+  font-size: 16px;
+}
+
+.categorylist{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  grid-gap: 45px;
+  width: 100%;
+}
+
+/* Categories.module.css */
+
+/* Style for category card container */
+.categorycard {
+  background-color:rgba(25, 70, 138, 0.226); /* Background color for category cards */
+  border: 1px solid #ccc;
+  padding: 15px;
+  max-height: 100%;
+  width: 110%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for category name */
+.title {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  padding: 8px;
+  color: #333;
+}
+
+/* Style for the description */
+.description {
+  color: #555;
+  margin-left: 8px;
+}
+
+.categorycard a{
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+/* Media query for responsiveness */
+@media (min-width: 768px) {
+  /* Adjust the layout for larger screens */
+  .category-card {
+    width: 30%; /* Adjust the width as needed */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+  }
+  .productCard{
+    margin-top: 20px;
+    width: 85% !important;
+    padding: 15px;
+  }
+
+  .categorylist{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+

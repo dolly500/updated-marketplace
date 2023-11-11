@@ -1,0 +1,65 @@
+/* Footer.module.css */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .leftBox {
+    flex: 1;
+    margin-left: 150px;
+  }
+  
+  .box {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .iconBox {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .detail {
+    flex: 1;
+  }
+  
+  .rightBox {
+    flex: 1;
+    margin-top: 20px;
+    margin-right: 100px;
+    padding: 20px;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Add this style for links in the rightBox */
+.rightBox .box li {
+    list-style: none;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .rightBox {
+      margin-right: 100px;
+    }
+  
+    .box {
+      margin-right: 0;
+    }
+  }
+  
