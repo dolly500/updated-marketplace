@@ -10,6 +10,7 @@ import Livechat from './components/LiveChat/livechat'
 import Product from './components/Products/products'
 import SignIn from './components/SignIn/signin'
 import SignUp from './components/SignUp/signup'
+import ForgotPassword from './components/Forgot-password/forgot-password'
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/products" component={Product} />
           <Route path="/signin" component={SignIn} />
           <Route path='/signup' component={SignUp} />
+          <Route path='/forgot-password' component={ForgotPassword} />
     </Layout>
     </Router>
   )

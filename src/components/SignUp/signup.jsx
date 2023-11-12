@@ -54,7 +54,8 @@ class SignUp extends Component {
             onChange={this.handleChange}
             placeholder="Password"
           />
-          <button type="submit">Sign Up</button>
+          <button type="submit" style={{padding: '10px'}}>Sign Up</button><br></br> <br></br>
+          <a href='/forgot-password'>Forgot Password</a>
         </form>
       </div>
     );
