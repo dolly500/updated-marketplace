@@ -121,11 +121,11 @@ function Header({onSearch}) {
           </MDBNavbarNav>
           <div style={{padding: '10px', display: 'flex'}}>
           <div>
-          <span className='navbar-text'> <a href="/" style={{ color: 'blue', fontSize: 'bolder', marginRight: '10px'}}>SignIn</a>
+          <span className='navbar-text'> <a href="/signin" style={{ color: 'blue', fontSize: 'bolder', marginRight: '10px'}}>SignIn</a>
            </span>
           </div>
            <div>
-           <span className='navbar-text'> <a href="/" style={{ color: 'blue', fontSize: 'bolder' }}>SignUp</a>
+           <span className='navbar-text'> <a href="/signup" style={{ color: 'blue', fontSize: 'bolder' }}>SignUp</a>
            </span>
            </div>
           </div>
