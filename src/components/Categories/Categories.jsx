@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import imgFour from '../Images/productFour.png';
 import imgThree from '../Images/productThree.png';
-import styles from "./Categories.module.css";
+import styles from "./Categories.module.css"
 
 
-function Categories() {
-
+function Categories({ addtocart }) {
 
     const productsData = [
         {
@@ -76,25 +75,26 @@ function Categories() {
         <select onChange={handleSortChange} value={sortOrder} style={{width: '200px'}}>
             <option value="asc">A-Z</option>
             <option value="desc">Z-A</option>
-            <option value="desc">Recently Added</option>
+            <option value="asc">Recently Added</option>
             <option value="desc">Date Added</option>
           </select>
         </div>
     
     <div className={styles.productCards}>
                 
+        <>
         {
-            products && products.map(product => {
-                return (
+            productsData.map((product) => (
                     <div className={styles.productCard} key={product.id}>
                         <img src={product.image} alt={product.name} />
                         <h3>{product.name}</h3>
                         <p>{product.price}</p>
-                        <button onClick={() => addToCart(product)}>Add to Cart</button>
+                        <button onClick={() => addtocart(product)}>Add to Cart</button>
                     </div>
                 )
-            })
+            )
         }
+        </>
       
     </div>
     </>

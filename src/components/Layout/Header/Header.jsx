@@ -4,6 +4,7 @@ import { BiCartAlt, BiHeart, BiSearchAlt } from "react-icons/bi";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import styles from "./Header.module.css";
 import Image from '../img/allsextoys.online logo.png'
+import { Link } from 'react-router-dom'
 import {
   MDBNavbar,
   MDBContainer,
@@ -89,8 +90,8 @@ function Header({onSearch}) {
     <div className={styles.barname}>
     <MDBNavbar expand='lg'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href='/'>
-                   <a href='/'> <img src={Image} alt='logo' style={{width: '80px', height: '70px'}}/></a>
+        <MDBNavbarBrand Link to='/'>
+                   <Link to='/'> <img src={Image} alt='logo' style={{width: '80px', height: '70px'}}/></Link>
         </MDBNavbarBrand>
         <MDBNavbarToggler
           type='button'
@@ -100,7 +101,9 @@ function Header({onSearch}) {
           aria-label='Toggle navigation'
           onClick={() => setOpenNavText(!openNavText)}
         >
-          <MDBIcon icon='bars' fas className={openNavText ? styles.custombarsicon : ''}/>
+         <div className={styles.bars}>
+         <MDBIcon icon='bars' style={{ color: 'red' }} className={openNavText ? styles.custombarsicon : ''}/>
+         </div>
         </MDBNavbarToggler>
         <MDBCollapse navbar open={openNavText}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
