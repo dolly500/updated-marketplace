@@ -15,12 +15,14 @@ import ForgotPassword from './components/Forgot-password/forgot-password'
 
 
 
+
 function App() {
   
   return (
     <Router>
+      
       <Layout >
-      <Route path="/" exact component={HomeScreen} />
+      <Route path="/" exact><HomeScreen /></Route>
           <Route path="/categories" component={CategoryList} />
           <Route path="/admin" component={Form} />
           <Route path="/cart" component={Cart} />
@@ -30,6 +32,7 @@ function App() {
           <Route path='/signup' component={SignUp} />
           <Route path='/forgot-password' component={ForgotPassword} />
     </Layout>
+    
     </Router>
   )
 }

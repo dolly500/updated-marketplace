@@ -18,11 +18,6 @@
     .header{
       max-width: 100%;
     }
-
-    .bars{
-      color: red !important;
-      background-color: blue !important;
-    }
   }
   
   .topHeader, .bottomHeader {

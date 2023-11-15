@@ -4,8 +4,8 @@ import imgThree from '../Images/productThree.png';
 import styles from "./Categories.module.css"
 
 
-function Categories({ addtocart }) {
 
+function Categories({ addtocart }) {
     const productsData = [
         {
             id: 1,
@@ -46,6 +46,8 @@ function Categories({ addtocart }) {
     const [products, setProducts] = useState(productsData);
     const [searchTerm, setSearchTerm] = useState('');
     const [sortOrder, setSortOrder] = useState('asc');
+
+    console.log(productsData)
   
     const handleSortChange = (e) => {
       setSortOrder(e.target.value);

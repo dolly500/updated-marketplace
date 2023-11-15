@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { BiCartAlt, BiHeart, BiSearchAlt } from "react-icons/bi";
-// import { SiExpertsexchange } from "react-icons/si";
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import styles from "./Header.module.css";
 import Image from '../img/allsextoys.online logo.png'
-import { Link } from 'react-router-dom'
+
 import {
   MDBNavbar,
   MDBContainer,
@@ -90,8 +89,8 @@ function Header({onSearch}) {
     <div className={styles.barname}>
     <MDBNavbar expand='lg'>
       <MDBContainer fluid>
-        <MDBNavbarBrand Link to='/'>
-                   <Link to='/'> <img src={Image} alt='logo' style={{width: '80px', height: '70px'}}/></Link>
+        <MDBNavbarBrand href='/'>
+                    <img src={Image} alt='logo' style={{width: '80px', height: '70px'}}/>
         </MDBNavbarBrand>
         <MDBNavbarToggler
           type='button'
@@ -101,9 +100,23 @@ function Header({onSearch}) {
           aria-label='Toggle navigation'
           onClick={() => setOpenNavText(!openNavText)}
         >
-         <div className={styles.bars}>
-         <MDBIcon icon='bars' style={{ color: 'red' }} className={openNavText ? styles.custombarsicon : ''}/>
-         </div>
+         {/* <MDBIcon icon='bars' style={{ color: 'red' }} className={openNavText ? styles.custombarsicon : ''}/> */}
+
+         <div>
+      {openNavText ? (
+        <RiCloseLine
+          style={{ color: 'black'}}
+          className={`${styles.customBarsIcon} ${styles.customCloseIcon}`}
+        />
+      ) : (
+        <RiMenu3Line
+          style={{ color: 'black'}}
+          className={styles.customBarsIcon}
+          onClick={() => setOpenNavText(!openNavText)}
+        />
+      )}
+    </div>
+        
         </MDBNavbarToggler>
         <MDBCollapse navbar open={openNavText}>
           <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>

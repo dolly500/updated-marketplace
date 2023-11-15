@@ -78,6 +78,8 @@ const categoriesData = [
   // Add more categories as needed
 ];
 
+console.log(categoriesData)
+
 const CategoryList = () => {
   return (
     <div className={styles.categorylist}>
