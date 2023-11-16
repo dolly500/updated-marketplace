@@ -5,7 +5,7 @@ import HomeScreen from './screens/homeScreen'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' 
 import CategoryList from './components/Categories/CategoryList'
 import Form from './components/Form/File';
-import Cart from './components/Cart/Cart'
+import CartFile from './components/Cart/CartFile'
 import Livechat from './components/LiveChat/livechat'
 import Product from './components/Products/products'
 import SignIn from './components/SignIn/signin'
@@ -25,7 +25,7 @@ function App() {
       <Route path="/" exact><HomeScreen /></Route>
           <Route path="/categories" component={CategoryList} />
           <Route path="/admin" component={Form} />
-          <Route path="/cart" component={Cart} />
+          <Route path="/cart" component={CartFile} />
           <Route path="/livechat" component={Livechat} />
           <Route path="/products" component={Product} />
           <Route path="/signin" component={SignIn} />

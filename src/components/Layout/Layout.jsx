@@ -8,7 +8,7 @@ function Layout(props) {
       <div>
       <Header />
 
-      <div style={{padding: "25px 70px"}}>
+      <div style={{padding: "45px 70px"}}>
         {props.children}
       </div>
 

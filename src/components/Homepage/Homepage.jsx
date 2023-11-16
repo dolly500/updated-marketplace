@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Categories from '../Categories/Categories';
-import Cart from '../Cart/Cart';
+// import Cart from '../Cart/Cart';
 
 function Homepage() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -26,10 +26,11 @@ function Homepage() {
     
       }
 
+     
     return (
         <div>
             <Categories searchTerm={searchTerm} setSearchTerm={setSearchTerm} addtocart={addtocart}/>
-            <Cart cartItems={cartItems} removeFromCart={removeFromCart}/>
+            {/* <Cart cartItems={cartItems} removeFromCart={removeFromCart}/> */}
         </div>
     );
 }

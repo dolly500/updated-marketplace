@@ -87,7 +87,7 @@ function Header({onSearch}) {
 
 
     <div className={styles.barname}>
-    <MDBNavbar expand='lg'>
+    <MDBNavbar expand='lg' className={styles.barss}>
       <MDBContainer fluid>
         <MDBNavbarBrand href='/'>
                     <img src={Image} alt='logo' style={{width: '80px', height: '70px'}}/>

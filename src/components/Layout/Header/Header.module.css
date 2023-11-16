@@ -149,6 +149,7 @@ select::-ms-expand {
 
 @media screen and (max-width:768px){
   .barname{
-    width: 65vw !important;
+    width: 150% !important;   
   }
+  
 }
